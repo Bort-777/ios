@@ -133,6 +133,8 @@ RCT_ENUM_CONVERTER(UIBackgroundFetchResult, (@{
         }
     }
 
+    content.interruptionLevel = UNNotificationInterruptionLevelTimeSensitive;
+
     NSDate* fireDate = [RCTConvert NSDate:details[@"fireDate"]];
     BOOL repeats = [RCTConvert BOOL:details[@"repeats"]];
     NSCalendarUnit defaultDateComponents =
