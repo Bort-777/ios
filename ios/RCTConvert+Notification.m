@@ -133,7 +133,7 @@ RCT_ENUM_CONVERTER(UIBackgroundFetchResult, (@{
         }
     }
 
-    if (@available(iOS 15, *)) {
+    if (@available(iOS 15.0, *)) {
         content.interruptionLevel = UNNotificationInterruptionLevelTimeSensitive;
     }
 
